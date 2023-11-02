@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    // во что собирается
+    "outDir": "./dist/",
+    // явно any
+    "noImplicitAny": true,
+    "module": "ESNext",
+    // во что интерпретир
+    "target": "es5",
+    // чтобы можно было реакт компоненты делать
+    "jsx": "react-jsx",
+    // интерпретация не только js но и ts
+    "allowJs": true,
+    "moduleResolution": "node",
+    // интерпретатор для пакетов, которые исп commonJS для импорта
+    "esModuleInterop": true,
+    // импорты без as
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "."
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
